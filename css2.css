@@ -1,0 +1,45 @@
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+}
+input[type=number] {
+    border: 2px solid green;
+    border-radius: 4px;
+}
+fieldset{
+	margin:0 600px 0 0px ;}
+legend {
+    padding-left: 2px;
+    padding-right: 2px;
+    border: 2px solid blue;
+	 border-radius: 4px;}
+button {
+  background-color: red;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+	border-radius: 22px;
+}
+input[type=email] {
+    border: 2px solid red;
+    border-radius: 4px;
+}
+select{
+margin-left:20px;
+border-radius:15px;}
+a:link, a:visited {
+    background-color: blue;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: red;   }

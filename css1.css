@@ -1,0 +1,60 @@
+ #A {
+	  position: absolute;
+      background-color:#00365a;
+      height: 87px;
+      top:0;
+      left: 0;
+      width: 100%;
+    } 
+ul {
+    list-style-type: none;
+    margin: 20px 0 0 0 ;
+    padding:10px 40px 20px 320px ;
+    overflow: hidden;
+    background-color: #00001a;
+}
+li {
+    float: left;
+}
+li a {
+     color: white;
+	 text-align: center;
+    padding:40px;
+    text-decoration: none;
+}  
+
+li a:hover {
+    background-color: #010000;
+}
+.mySlides {
+height:500px;
+width:57%
+}
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    color: white;
+}
+ /* text position */
+.upleft {
+	position:absolute;
+	top:3%;
+left:4%;}
+#map{position:absolute;
+top:170px;
+left:690px;
+height:410px;
+width:35%;
+}
+b {position :absolute;
+top :590px;
+left:690px;}
+table{
+	position:absolute;
+	top:700px;
+left:780px;
+width:38%;
+height:500px;
+}
+table,th,td{ border: 2px solid grey;
+    border-radius: 10px;}

@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<title>ΕΡΓΑΣΙΑ</title> 
+<meta charset="utf-8"> 
+<link rel="stylesheet" type="text/css" href="css1.css">
+</head>
+<body>
+<section id="A">
+<img  src="image.jpg" alt="TravelAgencyImage" style="width:100px;float:left;height:60px;margin-left:60px;margin-top:15px;"> 
+<ul>
+  <li><a href="#mapc"> Η διευθυνση μας &#10093;</a></li>
+  <li><a href="communicationform.html">Επικοινωνια &#10093;</a></li>
+  <li><a href="bookingform.html">Σελιδα κρατησης &#10093;</a></li>
+   <li><a href="loginpage.html">Συνδεση χρηστη &#10093;</a></li>
+</ul>
+</section>
+<section id="Β" >
+</section>
+<br><br> <br> <br>
+<h4 style='float:right;color:grey;margin-right:20px;'>
+  Τηλεφωνο επικοινωνιας: 2100000000 </h4>
+<h4 style='float:left;color:grey;'>
+   Ωρες Γραφειου:Δευ-Παρ:9:00-21:-00 & Σαββατο:9:00-15:00
+</h4> 
+<br><br><br>
+<hr >
+<section  style="background-image:url('background.jpeg');margin-top:25px;width:43.2%;height:430px;background-size: contain;">
+<br><br><br><br><br>
+ <ins style="color:black;font-family:serif;text-align:center;font-size:30px;">Ταξιδεψτε με το καλυτερο ταξιδιωτικο γραφειο</ins> 
+</section>
+<b  style="font-size:15px;color:grey;">Η διευθυνση μας:Καραολη&Δημητριου 85 ,Πειραιας,18452 </b>
+<a name="mapc">
+<div id="map">
+</div>
+ </a>
+<br>
+ <h3 style='font-size:25px;color:red;'>  Διαθεσιμες εκδρομες    </h3>
+<br> 
+<div class="container">
+<img class="mySlides" src="dubai.jpg">
+<div  class="upleft" >
+  <h2> Dubai, United Arab Emirates <h2>
+  </div>
+</div>
+<div class="container">
+<a href="newyork.html"><img class="mySlides" src="newyork.jpg"></a>
+<div class="upleft"  >
+<h2>New York,United States(Πατηστε για λεπτομερειες ) </h2>
+ </div>
+</div>
+<div class="container">
+<img class="mySlides" src="cambodia.jpg">
+<div class="upleft" >
+<h2>Cambodia,North Asia</h2>
+ </div>
+</div>
+<div id="Γ">
+<table>
+<tr>
+<th>Χρεωσεις εκδρομων</th>
+<th> Dubai</th>
+<th> Cambodia </th>
+<th> New York </th>
+<tr>
+<tr>
+<td> Ενηλικες (Αεροπορικα)</td>
+<td> 440€</td>
+<td> 500€</td>
+<td> 620€</td>
+</tr>
+<tr>
+<td> Παιδια(Αεροπορικα) </td>
+<td> 440€</td>
+<td> 500€</td>
+<td> 620€</td>
+</tr>
+<tr>
+<td> Mονοκλινο </td>
+<td> 65€/βραδια(+40/ενηλικα)</td>
+<td> 35€/βραδια(+25/ενηλικα)</td>
+<td> 55€/βραδια(+30/ενηλικα)</td>
+</tr>
+<tr>
+<td> Δικλινο </td>
+<td> 70€/βραδια(+40/ενηλικα)</td>
+<td> 40€/βραδια(+25/ενηλικα)</td>
+<td> 60€/βραδια(+30/ενηλικα)</td>
+</tr>
+<tr>
+<td> Tρικλινο </td>
+<td> 100€/βραδια(+40/ενηλικα)</td>
+<td> 85€/βραδια(+25/ενηλικα)</td>
+<td> 90€/βραδια(+30/ενηλικα)</td>
+</tr>
+<tr>
+<td> Tετρακλινο </td>
+<td> 120€/βραδια(+40/ενηλικα)</td>
+<td> 105€/βραδια(+25/ενηλικα)</td>
+<td> 110€/βραδια(+30/ενηλικα)</td>
+</tr>
+</table>
+</div>
+<script>
+var slideIndex = 0;
+slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(slideshow, 2000); // Change image every 2 seconds
+}
+  function initMap() {
+        var uluru = {lat:37.942408 , lng: 23.652700};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEW4p5gUqsgbB11wroEvHy74nRWpZ6CQI&callback=initMap">
+    </script>
+</body> 
+</html>

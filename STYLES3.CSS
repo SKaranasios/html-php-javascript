@@ -1,0 +1,36 @@
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+	width:35%;
+	margin-left:300px;
+}
+hr:after {
+    content: "&";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+p { border:3px solid red;
+padding:10px;
+border-radius:15px;
+margin-right:600px;}
+h2{
+color:blue;}
+a:link, a:visited {
+    background-color: blue;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: red;   }

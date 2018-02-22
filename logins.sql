@@ -1,0 +1,7 @@
+CREATE DATABASE IF NOT EXISTS `mydatabase1` DEFAULT CHARACTER SET greek COLLATE greek_general_ci;
+USE `mydatabase1`;
+
+CREATE TABLE login ( 
+EMAIL varchar(50) NOT NULL, 
+password varchar(50) NOT NULL, PRIMARY KEY (EMAIL) ) 
+ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=0 ;
